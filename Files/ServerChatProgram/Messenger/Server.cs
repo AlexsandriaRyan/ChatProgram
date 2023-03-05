@@ -26,17 +26,17 @@ namespace Messenger {
                 Listen();
 
             } catch (SocketException e) {
-                Console.WriteLine("SocketException: {0}", e);
+                PrintError("SocketException", e);
 
             } catch (IOException e) {
-                Console.WriteLine("IOException: {0}", e);
+                PrintError("IOException", e);
             }
         }
 
         private void Connect() {
             Console.Write("Waiting for a connection... ");
             Client = Server.AcceptTcpClient();
-            Console.WriteLine("Connected!");
+            PrintGreen("Connected!");
             Console.WriteLine("Waiting for message from Client...\n");
         }
     }

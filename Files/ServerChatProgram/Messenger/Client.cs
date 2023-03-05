@@ -23,13 +23,13 @@ namespace Messenger {
                 SendMessage();
 
             } catch (ArgumentNullException e) {
-                Console.WriteLine("ArgumentNullException: {0}", e);
+                PrintError("ArgumentNullException", e);
 
             } catch (SocketException e) {
-                Console.WriteLine("SocketException: {0}", e);
+                PrintError("SocketException", e);
 
             } catch (IOException e) {
-                Console.WriteLine("IOException: {0}", e);
+                PrintError("IOException", e);
             }
         }
     }

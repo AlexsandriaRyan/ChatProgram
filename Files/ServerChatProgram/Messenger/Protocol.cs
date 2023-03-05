@@ -33,11 +33,11 @@ namespace Messenger {
                     stream = Client.GetStream();
 
                 } catch (ObjectDisposedException e) {
-                    Console.WriteLine("ObjectDisposedException: {0}", e);
+                    PrintError("ObjectDisposedException", e);
                     Exit();
 
                 } catch (NullReferenceException e) {
-                    Console.WriteLine("NullReferenceException: {0}", e);
+                    PrintError("NullReferenceException", e);
                     Exit();
                 }
 
@@ -49,7 +49,8 @@ namespace Messenger {
                     
                     // Translate to ASCII & print
                     string data = System.Text.Encoding.ASCII.GetString(bytes, 0, i);
-                    Console.WriteLine("{0} >>\t{1}", OtherName, data);
+                    PrintYellow(OtherName + " >>\t", 1);
+                    Console.WriteLine(data);
                     
                     // If the message ends with the "disconnect" message, it will disconnect any remaining client / server objects then exit the program
                     if (data.EndsWith(DisconnectMessage)) {
@@ -83,7 +84,7 @@ namespace Messenger {
                     if (userKey.Key == ConsoleKey.I) {
                         
                         while (string.IsNullOrEmpty(message)) {
-                            Console.Write("INPUT MODE >>\t");
+                            PrintGreen("INPUT MODE >>\t", 1);
                             message = Console.ReadLine();
                         }
 
@@ -119,15 +120,53 @@ namespace Messenger {
 
         // Disconnects any client / server objects that are instantiated
         private void Disconnect() {
-            Console.WriteLine("\nLost connection...");
+            PrintYellow("\nLost connection...");
             Client?.Close();
             Server?.Stop();
         }
 
         // Exits the program
         private void Exit() {
-            Console.WriteLine("Exiting program...");
+            PrintError("Exiting program...");
             Environment.Exit(1);
+        }
+        
+        // Methods for printing in colour
+        // Methods taking an int = no newline
+        public static void PrintYellow(string line) {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(line);
+            Console.ResetColor();
+        }
+        
+        public static void PrintYellow(string line, int noLine) {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(line);
+            Console.ResetColor();
+        }
+
+        public static void PrintGreen(string line) {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(line);
+            Console.ResetColor();
+        }
+        
+        public static void PrintGreen(string line, int noLine) {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(line);
+            Console.ResetColor();
+        }
+        
+        public static void PrintError(string error) {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(error);
+            Console.ResetColor();
+        }
+        
+        public static void PrintError(string error, Exception e) {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("{0}: {1}", error, e);
+            Console.ResetColor();
         }
     }
 }
