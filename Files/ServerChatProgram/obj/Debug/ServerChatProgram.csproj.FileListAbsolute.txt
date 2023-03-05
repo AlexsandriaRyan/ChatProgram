@@ -1,0 +1,10 @@
+C:\Users\alexs\Documents\School\Courses\Semester 3\PROG2200\Exercises & Assignments\Assignment 1\Files\ServerChatProgram\ServerChatProgram\bin\Debug\ServerChatProgram.exe
+C:\Users\alexs\Documents\School\Courses\Semester 3\PROG2200\Exercises & Assignments\Assignment 1\Files\ServerChatProgram\ServerChatProgram\bin\Debug\ServerChatProgram.pdb
+C:\Users\alexs\Documents\School\Courses\Semester 3\PROG2200\Exercises & Assignments\Assignment 1\Files\ServerChatProgram\ServerChatProgram\obj\Debug\ServerChatProgram.csproj.AssemblyReference.cache
+C:\Users\alexs\Documents\School\Courses\Semester 3\PROG2200\Exercises & Assignments\Assignment 1\Files\ServerChatProgram\ServerChatProgram\obj\Debug\ServerChatProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\alexs\Documents\School\Courses\Semester 3\PROG2200\Exercises & Assignments\Assignment 1\Files\ServerChatProgram\ServerChatProgram\obj\Debug\ServerChatProgram.csproj.CoreCompileInputs.cache
+C:\Users\alexs\Documents\School\Courses\Semester 3\PROG2200\Exercises & Assignments\Assignment 1\Files\ServerChatProgram\ServerChatProgram\obj\Debug\ServerChatProgram.exe
+C:\Users\alexs\Documents\School\Courses\Semester 3\PROG2200\Exercises & Assignments\Assignment 1\Files\ServerChatProgram\ServerChatProgram\obj\Debug\ServerChatProgram.pdb
+C:\Users\alexs\Documents\School\Courses\Semester 3\PROG2200\Exercises & Assignments\Assignment 1\Files\ServerChatProgram\ServerChatProgram\bin\Debug\Messenger.dll
+C:\Users\alexs\Documents\School\Courses\Semester 3\PROG2200\Exercises & Assignments\Assignment 1\Files\ServerChatProgram\ServerChatProgram\bin\Debug\Messenger.pdb
+C:\Users\alexs\Documents\School\Courses\Semester 3\PROG2200\Exercises & Assignments\Assignment 1\Files\ServerChatProgram\ServerChatProgram\obj\Debug\ServerChatProgram.csproj.CopyComplete
